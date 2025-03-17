@@ -1,7 +1,6 @@
 package com.relations.app.dtos;
 
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 import com.relations.app.models.Carro;

@@ -2,8 +2,8 @@ package com.relations.app.models;
 
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -43,7 +43,7 @@ public class Empresa implements Serializable{
 
     @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonManagedReference
-    private Set<Carro> carros = new HashSet<>();
+    private List<Carro> carros = new ArrayList<>();
 
     
     
